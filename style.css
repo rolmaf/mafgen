@@ -1,114 +1,103 @@
-.html {
-    max-height: 100vh;
-    max-width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+html {
+    width: 100vw;
+    /* height: 100vh; */
 }
 
-.wrapper {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.story-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.story__score {
-    font-size: 20pt;
-    margin-bottom: 50px;
-    min-width: 80vw;
-    text-align: center;
-}
-
-.story__circle {
-    width: 150px;
-    background-color: red;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: black 5px 11px 1px 1px;
-}
-
-.story__square {
-    width: 150px;
-    background-color: darkblue;
-    height: 150px;
-    box-shadow: greenyellow 5px 11px 1px 1px;
-}
-
-.story__square:active {
-    background-color: violet;
-    box-shadow: greenyellow 5px 5px 0px 0px;
-}
-
-a {
-    cursor: pointer;
-}
-
-.shop__check-password-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.shop__shop-mode-body {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.shop__check-password-form {
-    width: 300px;
-    margin: 20px;
-}
-
-.shop__btn {
-    width: 300px;
-}
-
-.shop__title {
-    font-size: 15pt;
-}
-
-.story__circle:active {
-    background-color: greenyellow;
-    box-shadow: black 5px 5px 0px 0px;
-}
-
-.menu__body {
+body {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* height: 100%; */
+    overflow-x: hidden;
+}
+
+.players-names-form {
+    margin: 10px;
+    max-width: 90vw;
+}
+
+.players-names-input {
+    max-width: 270px;
+}
+
+.players-names-form {
+    margin: 10px;
+    max-width: 90vw;
+}
+
+.roles-names-form {
+    margin: 10px;
+    max-width: 90vw;
+}
+
+.roles-names-input {
+    min-width: 80px !important;
+    max-width: 130px;
+}
+
+.roles-amount-input {
+    max-width: 100px;
+}
+
+.entered-names__title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16pt;
+    margin-left: 10px;
+}
+
+.entered-roles__title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16pt;
+    margin-left: 10px;
 }
 
 
-/* .menu__title {
-    color: cornflowerblue;
-    font-size: 20pt;
-    margin-bottom: 30px;   
+.rm-name {
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px; 
+    box-shadow: none;
+    border: 0px solid black;
+    height: 25px;
+    background-color: rgb(219, 146, 146);
+}
+
+
+
+/* .entered-names__array>li>div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 200px;
 } */
 
-.menu__on-story-mode {
-    width: 150px;
-    margin-top: 15px;
+
+
+.entered-names__array>li>div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 340px;
 }
 
-.menu__on-shop-mode {
-    width: 150px;
-    margin-top: 10px;
+.entered-roles__array>li>div {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 340px;
 }
 
-@media screen {
-    /* .menu__title:hover {
-        color: crimson;
-        cursor: default;
-    } */
+.give-out-roles__btn {
+    display: block !important;
+    min-width: 100px;
+    margin: 0 10px;
+    max-width: 360px !important;
+}
+
+::selection {
+    background-color: #ffc107;
+    color: #fff;
 }
